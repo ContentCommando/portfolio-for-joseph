@@ -78,19 +78,20 @@ a {
 .page-wrapper {
   display: flex;
   background-color: aqua;
-  flex-direction: column;
+  /* flex-direction: column; */
   margin-top: 15px;
   flex-wrap: wrap;
+  height: auto;
 }
 
 .page-section {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  height: 100%;
 }
 
 .maindir {
-  width: 200px;
+  min-width: 200px;
   padding-left: 25px;
   padding-top: 40px;
   /* background-color: bisque; */
@@ -102,11 +103,13 @@ a {
 
 .page-contact {
   display: flex;
+  height: auto;
 }
 
 #workrow {
   color: rgb(41, 41, 121);
-  border-right: 5px solid rgb(41, 41, 121)
+  border-right: 5px solid rgb(41, 41, 121);
+  height: auto;
 }
 
 #about {
@@ -118,11 +121,14 @@ a {
   background-color: skyblue;
   color: rgb(41, 41, 121);
   height: 260px;
+  display: flex;
+  width: 100%;
 }
 
 #contact {
   background-color:rgb(41, 41, 121);
-  height: 130px
+  height: 130px;
+  width: 100%;
 }
 
 ul {
@@ -177,7 +183,8 @@ p {
   color: white;
   padding: 20px 25px;
   padding-right: 50px;
-  width: 800px;
+  width: auto;
+  /* text-wrap: wrap; */
 }
 
 
@@ -189,12 +196,12 @@ h3 {
 
 /* footer selector */
 
-footer p{
+footer {
   background-color: grey;
   width: 100%;
-  text-align: right;
+  text-align: center;
   height: 100px;
-  padding-top: 40px;
+  padding-top: 20px;
   color: black;
 }
 
